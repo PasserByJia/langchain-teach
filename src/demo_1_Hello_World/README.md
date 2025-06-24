@@ -1,6 +1,6 @@
-# 演示 1：你好，世界
+# 演示 1：Hello World
 
-本演示展示了一个使用 LangChain.js 和 OpenAI 兼容模型的基本“你好，世界”示例。
+本演示展示了一个使用 LangChain.js 和 OpenAI 兼容模型的基本“Hello World”示例。
 
 ## 如何运行
 
