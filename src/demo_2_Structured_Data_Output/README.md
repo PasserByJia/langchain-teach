@@ -9,7 +9,7 @@
 2.  在项目根目录下运行以下命令：
 
     ```bash
-   npx tsx ./src/demo_2_Structured_Dat/index.ts
+    npx tsx ./src/demo_2_Structured_Data_Output/index.ts
     ```
 
 3.  你将在控制台中看到一个关于猫的笑话的结构化输出，格式如下：
