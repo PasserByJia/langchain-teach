@@ -1,6 +1,7 @@
 import 'dotenv/config';
 import { ChatOpenAI } from '@langchain/openai';
 import { z } from 'zod';
+import { model } from '../model';
 
 // 使用 Zod 定义我们期望的输出模式
 const jokeSchema = z.object({
@@ -10,21 +11,6 @@ const jokeSchema = z.object({
 });
 
 async function main() {
-  // 实例化一个 ChatOpenAI 模型
-  const model = new ChatOpenAI({
-    // 指定要使用的模型名称，从环境变量中读取
-    model: process.env.CHAT_MODEL_NAME,
-    // 配置 API 的连接信息
-    configuration: {
-      // API 的基础 URL，从环境变量中读取
-      baseURL: process.env.API_BASE_URL,
-      // API 密钥，从环境变量中读取
-      apiKey: process.env.API_KEY,
-    },
-    // 设置温度参数，控制模型输出的随机性。较高的值会产生更多样、更具创意的输出。
-    temperature: 0.7
-  })
-
   // 使用 withStructuredOutput 方法将模型与我们的模式绑定
   const structuredLlm = model.withStructuredOutput(jokeSchema, {
     name: 'joke',  //并非强制要求，但我们可以为模式传递一个名称，以便为模型提供有关模式所代表内容的额外上下文，从而提高性能

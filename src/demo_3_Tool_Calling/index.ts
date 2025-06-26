@@ -3,16 +3,7 @@ import { ChatOpenAI } from '@langchain/openai';
 import { tool } from '@langchain/core/tools';
 import { z } from 'zod';
 import { HumanMessage, ToolMessage } from '@langchain/core/messages';
-
-// 1. 定义模型
-const llm = new ChatOpenAI({
-  model: process.env.CHAT_MODEL_NAME,
-  temperature: 0.7,
-  configuration: {
-    baseURL: process.env.API_BASE_URL,
-    apiKey: process.env.API_KEY,
-  },
-});
+import { model as llm } from "../model";
 
 // 2. 定义工具
 const calculatorSchema = z.object({

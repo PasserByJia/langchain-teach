@@ -1,16 +1,7 @@
 import 'dotenv/config';
 import { ChatOpenAI } from '@langchain/openai';
 import { StringOutputParser, JsonOutputParser } from '@langchain/core/output_parsers';
-
-// 初始化模型
-const model = new ChatOpenAI({
-  configuration: {
-    baseURL: process.env.API_BASE_URL,
-    apiKey: process.env.API_KEY,
-  },
-  model: process.env.CHAT_MODEL_NAME,
-  temperature: 0,
-});
+import { model } from "../model";
 
 // 支持 JSON 输出的模型实例
 const jsonModel = new ChatOpenAI({
