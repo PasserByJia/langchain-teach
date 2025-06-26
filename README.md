@@ -68,3 +68,28 @@
 
 - **文件**: `src/demo_5_Debugging/index.ts`
 - **功能**: 演示了如何通过设置 `verbose: true` 来启用详细的日志记录，以帮助调试和理解 LangChain.js 组件的内部执行流程。
+
+### Demo 6: 序列（Sequence）
+
+- **文件**: `src/demo_6_Sequence/index.ts`
+- **功能**: 展示了如何将多个 LangChain 组件（如提示、模型、输出解析器）串联成一个序列，以实现更复杂的逻辑。
+
+### Demo 7: LCEL 流式（Streaming）
+
+- **文件**: `src/demo_7_LCEL_Streaming/index.ts`
+- **功能**: 演示了如何利用 LangChain 表达式语言（LCEL）来实现对输出的流式处理，这对于实时应用非常有用。
+
+### Demo 8: 并行（Parallel）
+
+- **文件**: `src/demo_8_Parallel/index.ts`
+- **功能**: 演示了如何使用 `RunnableParallel` 来并行执行多个任务，并将它们的输出合并到一个映射中。
+
+### Demo 9: 绑定（Binding）
+
+- **文件**: `src/demo_9_Binding/index.ts`
+- **功能**: 展示了如何向模型运行时（runtime）绑定函数（工具）或停止序列，以更精确地控制模型的行为。
+
+### Demo 10: Runnable Lambda
+
+- **文件**: `src/demo_10_Runnable_Lambda/index.ts`
+- **功能**: 演示了如何使用 `RunnableLambda` 将自定义函数包装成可运行的组件，以及如何在序列中直接使用函数（函数强制转换）。
