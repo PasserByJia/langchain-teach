@@ -13,6 +13,17 @@
     - [Demo 3: 工具调用](#demo-3-工具调用)
     - [Demo 4: 流式输出](#demo-4-流式输出)
     - [Demo 5: 调试](#demo-5-调试)
+    - [Demo 6: 序列（Sequence）](#demo-6-序列sequence)
+    - [Demo 7: LCEL 流式（Streaming）](#demo-7-lcel-流式streaming)
+    - [Demo 8: 并行（Parallel）](#demo-8-并行parallel)
+    - [Demo 9: 绑定（Binding）](#demo-9-绑定binding)
+    - [Demo 10: 自定义函数](#demo-10-自定义函数)
+    - [Demo 11: Passthrough](#demo-11-passthrough)
+    - [Demo 12: Assign](#demo-12-assign)
+    - [Demo 13: 消息历史](#demo-13-消息历史)
+    - [Demo 14: 路由](#demo-14-路由)
+    - [Demo 15: 回退机制](#demo-15-回退机制)
+    - [Demo 16: 取消执行](#demo-16-取消执行)
 
 ## 快速开始
 
