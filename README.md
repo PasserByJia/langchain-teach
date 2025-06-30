@@ -89,7 +89,37 @@
 - **文件**: `src/demo_9_Binding/index.ts`
 - **功能**: 展示了如何向模型运行时（runtime）绑定函数（工具）或停止序列，以更精确地控制模型的行为。
 
-### Demo 10: Runnable Lambda
+### Demo 10: 自定义函数
 
-- **文件**: `src/demo_10_Runnable_Lambda/index.ts`
+- **文件**: `src/demo_10_Custom_Function/index.ts`
 - **功能**: 演示了如何使用 `RunnableLambda` 将自定义函数包装成可运行的组件，以及如何在序列中直接使用函数（函数强制转换）。
+
+### Demo 11: Passthrough
+
+- **文件**: `src/demo_11_Passthrough/index.ts`
+- **功能**: 展示了如何使用 `RunnablePassthrough` 将输入数据原封不动地传递下去，或者在并行处理中添加新的键。
+
+### Demo 12: Assign
+
+- **文件**: `src/demo_12_Assign/index.ts`
+- **功能**: 演示了如何使用 `RunnableAssign` 在链的中间动态地创建和添加新的字段到状态中。
+
+### Demo 13: 消息历史
+
+- **文件**: `src/demo_13_Message_History/index.ts`
+- **功能**: 展示了如何使用 `LangGraph` 和 `MemorySaver` 来管理多轮对话的上下文，并为每个用户或会话维护独立的消息历史。
+
+### Demo 14: 路由
+
+- **文件**: `src/demo_14_Routing/index.ts`
+- **功能**: 演示了如何根据用户问题的分类，非确定性地将请求路由到不同的专家链进行处理。
+
+### Demo 15: 回退机制
+
+- **文件**: `src/demo_15_Fallbacks/index.ts`
+- **功能**: 展示了如何通过 `.withFallbacks()` 为链或模型设置回退机制，以处理 API 错误、模型能力不足或输入超长等问题，从而提高应用的鲁棒性。
+
+### Demo 16: 取消执行
+
+- **文件**: `src/demo_16_Cancel_Execution/index.ts`
+- **功能**: 演示了如何使用 `AbortController` 来取消正在执行的 `invoke` 或 `stream` 调用，这对于控制长时间运行的任务或优化用户体验非常有用。
